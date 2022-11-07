@@ -9,9 +9,8 @@ password = pyautogui.password("set your password: ")
 
 guess_p = ""
 while (guess_p != password):
-   guess_p = random.choices(ch_list, k=len(password))
+    guess_p = random.choices(ch_list, k=len(password))
     print("==========" + str(guess_p) + "==========")
     if (guess_p==password):
-      print("password is : " + "" .join(guess_p))
-      break
-    
+        print("password is : " + "" .join(guess_p))
+        break
